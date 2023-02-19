@@ -14,8 +14,9 @@ bool range(int N) // Проверка корректного ввода
     else return false;
 }
 
-int N = Number();
-if (range(N))
+void Palindrom(int N) // Проверка на палиндром
+{
+    if (range(N))
 {
     if(N/10000 == N % 10 && (N/1000)%10 == (N%100)/10)
     {
@@ -24,3 +25,7 @@ if (range(N))
     else Console.WriteLine("Нет, это не палиндром");
 } 
 else Console.WriteLine("Число не пятизначное!");
+}
+
+int N = Number();
+Palindrom(N);
